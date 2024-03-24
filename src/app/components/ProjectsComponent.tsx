@@ -1,5 +1,7 @@
+import Image from "next/image";
 import Link from "next/link";
-import React from "react";
+
+import News from "/public/images/project_images/newsLinkNow.webp";
 
 const ProjectsComponent: React.FC = () => {
   return (
@@ -21,6 +23,15 @@ const ProjectsComponent: React.FC = () => {
         </p>
       </div>
       {/* Projects Listed with links to repo and live site */}
+      <section className="w-full p-2 flex flex-col">
+        <Image
+          src={News}
+          alt="news-link-now"
+          width={1000}
+          height={1000}
+          className="rounded-lg border-2 border-zinc-700 shadow-xl shadow-zinc-800"
+        />
+      </section>
     </main>
   );
 };
