@@ -30,33 +30,13 @@ const HomeComponent = () => {
           className="rounded-b-full"
         />
       </div>
-      <section className="mt-8 flex flex-col items-center">
-        <ul className="flex flex-col font-semibold text-slate-800">
-          <li className="flex text-lg items-center gap-1">
-            <span>
-              <Image
-                src={ReactLogo}
-                alt="react-logo"
-                width={200}
-                height={200}
-                className="w-6 h-5 p-[0.07rem]"
-              />
-            </span>
-            React Library
-          </li>
-          <li className="flex text-lg items-center gap-2">
-            <span>
-              <Image
-                src={NextLogo}
-                alt="next-logo"
-                width={200}
-                height={200}
-                className="w-4 h-4 ml-1"
-              />
-            </span>
-            Next.js Framework
-          </li>
-        </ul>
+      <section className="mt-8 text-lg flex flex-col items-center">
+        <div className="flex">
+          <p>React</p>&nbsp;|&nbsp;<p>Next.JS</p>
+        </div>
+        <div className="flex">
+          <p>Typescript</p>&nbsp;|&nbsp; <p>Tailwind</p>
+        </div>
       </section>
 
       <div className="mt-8 mb-4">
