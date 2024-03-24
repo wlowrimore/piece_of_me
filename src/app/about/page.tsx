@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 
 const About: React.FC = () => {
@@ -23,12 +24,14 @@ const About: React.FC = () => {
             developed a rich and diverse skill set that flows seemlessly into my
             work as a Frontend Developer.
           </p>
-          <div className="flex items-center w-full text-zinc-100 justify-between py-1 px-8 mt-8 bg-zinc-400/30 rounded">
-            <p className="text-white font-semibold tracking-wide">
-              View Some of My Work
-            </p>
-            <HiChevronRight className="text-3xl" />
-          </div>
+          <Link href="/projects">
+            <div className="flex items-center w-full text-zinc-100 justify-between py-1 px-8 mt-8 bg-zinc-400/30 rounded">
+              <p className="text-white font-semibold tracking-wide">
+                View Some of My Work
+              </p>
+              <HiChevronRight className="text-3xl" />
+            </div>
+          </Link>
         </div>
       </div>
     </main>
