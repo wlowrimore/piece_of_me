@@ -2,20 +2,21 @@ import Image from "next/image";
 import Avatar from "/public/images/will_avatar.webp";
 import ReactLogo from "/public/images/languages/react.webp";
 import NextLogo from "/public/images/languages/next.webp";
+import Link from "next/link";
 
 const HomeComponent = () => {
   return (
     <>
       <div className="flex flex-col items-center">
         <div className="flex items-center">
-          <h1 className="bg-[#304454] rounded-full py-4 text-2xl text-[#B89F88] font-semibold my-6 uppercase">
+          <h1 className="bg-[#304454] rounded-full py-4 text-2xl text-[#B89F88] font-semibold uppercase">
             Will
           </h1>
           <h1 className="text-2xl text-slate-900 font-semibold uppercase">
             iam lowrimore
           </h1>
         </div>
-        <h2 className="text-lg text-slate-900/70 font-semibold mt-[-1rem] uppercase">
+        <h2 className="text-lg text-slate-900/70 font-semibold uppercase">
           &#123; Frontend_Developer &#125;
         </h2>
       </div>
@@ -57,10 +58,14 @@ const HomeComponent = () => {
           </li>
         </ul>
       </section>
-      <div className="mt-8">
-        <button className="py-3 px-[1.4rem] bg-[#304454] text-[#B89F88] text-4xl font-semibold rounded-xl">
-          ?
-        </button>
+
+      <div className="mt-8 mb-4">
+        <Link
+          href="/about"
+          className="py-3 px-[1.4rem] bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-xl"
+        >
+          Learn More
+        </Link>
       </div>
     </>
   );
