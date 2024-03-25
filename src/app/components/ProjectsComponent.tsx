@@ -1,39 +1,82 @@
+"use client";
+
+import { useState, useEffect } from "react";
+import { Project } from "../../../types";
 import Image from "next/image";
 import Link from "next/link";
 
-import News from "/public/images/project_images/newsLinkNow.webp";
+import GithubLogo from "/public/images/languages/github.webp";
+import InternetLogo from "/public/images/languages/internet.webp";
 
-const ProjectsComponent: React.FC = () => {
+interface ProjectComponentProps {
+  project: Project;
+}
+
+const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
+  const [projectSample, setProjectSample] = useState<Project[]>([]);
+  const [visibleOverlayId, setVisibleOverlayId] = useState<number | null>(null);
+
+  const handleMouseEnter = (projectId: number): void => {
+    setVisibleOverlayId(projectId);
+  };
+
+  const handleMouseLeave = (): void => {
+    setVisibleOverlayId(null);
+  };
+
   return (
-    <main className="w-screen min-h-screen bg-cyan-900/20 flex flex-col justify-center items-center p-4 mx-auto container">
-      <h1 className="text-3xl font-semibold mb-4">Showcased Projects</h1>
-      <div className="w-full flex flex-col px-2">
-        <p>
-          Below you will find a few projects that I have selected to showcase my
-          skill set. You can find all of my projects, various coding exercises
-          and repositories on my&nbsp;
-          <Link
-            href="https://www.github.com/wlowrimore"
-            target="_blank"
-            rel="noreferrer noopener"
-            className="text-sky-700 font-semibold underline"
-          >
-            GitHub page.
-          </Link>
-        </p>
-      </div>
-      {/* Projects Listed with links to repo and live site */}
-      <section className="w-full p-2 flex flex-col">
+    <main className="flex flex-col items-center">
+      <div className="relative mt-6">
+        <div
+          className="absolute inset-0 p-4 bg-black/70 flex items-center justify-center rounded-lg transition-opacity duration-300"
+          style={{
+            opacity: project && visibleOverlayId === project.id ? 1 : 0,
+          }}
+          onMouseEnter={() => project && handleMouseEnter(project.id)}
+          onMouseLeave={handleMouseLeave}
+        >
+          <div className="flex flex-col items-center text-white gap-6">
+            <p>{project && project.desc}</p>
+            <div className="flex gap-6">
+              <Link
+                href={project && project.githubUrl ? project.githubUrl : "/"}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Image
+                  src={GithubLogo}
+                  alt="github-logo"
+                  width={1000}
+                  height={1000}
+                  className="w-8 h-8"
+                />
+              </Link>
+              <Link
+                href={project && project.liveUrl ? project.liveUrl : "/"}
+                target="_blank"
+                rel="noreferrer noopener"
+              >
+                <Image
+                  src={InternetLogo}
+                  alt="internet-logo"
+                  width={1000}
+                  height={1000}
+                  className="w-[2.1rem] h-[2.08rem]"
+                />
+              </Link>
+            </div>
+          </div>
+        </div>
         <Image
-          src={News}
-          alt="news-link-now"
+          src={project.imageUrl || ""}
+          alt={project.title || ""}
           width={1000}
           height={1000}
-          className="rounded-lg border-2 border-zinc-700 shadow-xl shadow-zinc-800"
+          className="rounded-lg border-2 border-zinc-700 shadow-lg shadow-zinc-800"
         />
-      </section>
+      </div>
     </main>
   );
 };
 
-export default ProjectsComponent;
+export default ProjectComponent;
