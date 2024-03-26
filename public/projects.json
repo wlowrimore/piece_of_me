@@ -22,5 +22,13 @@
     "desc": "Where in The World is a challenge project that I completed for Frontend Mentor.  It features country data fetched from the REST Countries API.  Users can search by any country name worldwide or use the dropdown to filter by region.  This app was built using React, Next.JS, and Tailwind",
     "githubUrl": "https://github.com/wlowrimore/frontend-mentor-rest-countries-api",
     "liveUrl": "https://searchrestcountriesapi.vercel.app/"
+  },
+  {
+    "id": 4,
+    "title": "Next Movies",
+    "imageUrl": "/images/project_images/nextMovies.webp",
+    "desc": "Next Movies is a dynamic and mobile friendly application created using React, Next.JS, NextAuth, TailwindCSS, and TMDB API.  Users can sign-up/sign-in via Google to create a user session with JSON Web Tokens(JWT).",
+    "githubUrl": "https://github.com/wlowrimore/frontend2024_movie_app",
+    "liveUrl": "https://frontend2024-movie-app.vercel.app/"
   }
 ]

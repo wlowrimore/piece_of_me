@@ -3,6 +3,7 @@ import Avatar from "/public/images/will_avatar.webp";
 import ReactLogo from "/public/images/languages/react.webp";
 import NextLogo from "/public/images/languages/next.webp";
 import Link from "next/link";
+import { HiChevronRight } from "react-icons/hi";
 
 const HomeComponent = () => {
   return (
@@ -16,7 +17,7 @@ const HomeComponent = () => {
             iam lowrimore
           </h1>
         </div>
-        <h2 className="text-lg text-slate-900/70 font-semibold uppercase">
+        <h2 className="text-[0.98rem] w-full text-end mt-[-7%] text-slate-900/70 font-semibold uppercase">
           &#123; Frontend_Developer &#125;
         </h2>
       </div>
@@ -30,7 +31,7 @@ const HomeComponent = () => {
           className="rounded-b-full"
         />
       </div>
-      <section className="mt-8 text-lg flex flex-col items-center">
+      <section className="mt-8 text-lg font-semibold text-slate-900/80 flex flex-col items-center">
         <div className="flex">
           <p>React</p>&nbsp;|&nbsp;<p>Next.JS</p>
         </div>
@@ -39,12 +40,15 @@ const HomeComponent = () => {
         </div>
       </section>
 
-      <div className="mt-8 mb-4">
+      <div className="w-screen flex items-center justify-center mt-auto h-[3rem]">
         <Link
           href="/about"
-          className="py-3 px-[1.4rem] bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-xl"
+          className="w-full h-full flex items-center justify-between px-20 bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-t-3xl"
         >
-          Learn More
+          Get To Know Me
+          <div className="animate-slide-right-back">
+            <HiChevronRight className="text-4xl" />
+          </div>
         </Link>
       </div>
     </>

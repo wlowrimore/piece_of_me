@@ -9,12 +9,12 @@ interface ProjectPageProps {
 const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
   console.log("PROJECTS FROM PAGE: ", projects);
   return (
-    <main className="w-screen min-h-screen bg-cyan-900/70 flex flex-col items-center p-4 mx-auto container">
-      <div className="">
+    <main className="w-screen min-h-screen bg-cyan-100/70 flex flex-col items-center p-4 mx-auto container mb-6">
+      <div className="mt-4">
         <h1 className="text-2xl font-semibold my-2 uppercase">
           Project Showcase
         </h1>
-        <p>
+        <p className="text-slate-950 text-lg">
           Below you will find a few projects that I have selected to showcase my
           skill set. You can find all of my projects, various coding excersises,
           and repositories on my{" "}
@@ -22,9 +22,9 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
             href="https://github.com/wlowrimore"
             target="_blank"
             rel="noreferrer"
-            className="text-red-800 font-semibold underline"
+            className="text-red-900/80 font-semibold underline"
           >
-            Github page.
+            Github&nbsp;page.
           </Link>
         </p>
       </div>

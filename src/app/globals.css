@@ -5,3 +5,13 @@
 --webkit-scrollbar {
   display: none;
 }
+
+@keyframes slide-right-back {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(0.3rem);
+  }
+}
