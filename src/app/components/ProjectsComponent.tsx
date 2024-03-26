@@ -26,7 +26,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
 
   return (
     <main className="flex flex-col items-center">
-      <div className="relative mt-10">
+      <div className="relative mt-10 mb-12">
         <div
           className="absolute inset-0 p-4 bg-black/70 flex items-center justify-center rounded-lg transition-opacity duration-300"
           style={{

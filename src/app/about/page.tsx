@@ -1,11 +1,19 @@
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
+import { TiHome } from "react-icons/ti";
 
 const About: React.FC = () => {
   return (
-    <main className="bg-fixed w-screen min-h-screen bg-about-bg  bg-cover bg-center bg-norepeat flex flex-col mx-auto container">
+    <main className="bg-fixed w-screen min-h-screen bg-about-bg bg-cover bg-center bg-norepeat flex flex-col mx-auto container">
       <div className="bg-zinc-800/70 w-full min-h-screen">
-        <div className="flex flex-col w-full px-6 py-4 justify-center">
+        <div className="fixed right-3 top-2 text-zinc-400/90 rounded-full">
+          <p className="text-2xl">
+            <Link href="/">
+              <TiHome />
+            </Link>
+          </p>
+        </div>
+        <div className="flex flex-col w-full px-6 pt-8 pb-14 justify-center">
           <h1 className="py-3 text-2xl text-zinc-100 uppercase">Hey there!</h1>
           <p className="text-white text-lg mb-[0.88rem]">
             I'm William Lowrimore, a Frontend Developer from Nashville, TN. I
@@ -25,10 +33,10 @@ const About: React.FC = () => {
             work as a Frontend Developer.
           </p>
         </div>
-        <div className="w-screen flex items-center justify-center mt-auto h-[3rem]">
+        <div className="fixed bottom-0 w-screen flex items-center justify-center h-[3rem] mb-[-0.2rem]">
           <Link
             href="/projects"
-            className="w-full h-full flex items-center justify-between px-16 bg-zinc-500/30 text-white text-lg font-semibold rounded-t-3xl"
+            className="w-full h-full flex items-center justify-between px-12 bg-red-950 text-zinc-300 text-lg font-semibold rounded-t-3xl border-t border-zinc-500"
           >
             View Some of My Work
             <div className="animate-slide-right-back">

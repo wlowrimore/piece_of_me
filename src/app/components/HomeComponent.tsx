@@ -43,7 +43,7 @@ const HomeComponent = () => {
       <div className="w-screen flex items-center justify-center mt-auto h-[3rem]">
         <Link
           href="/about"
-          className="w-full h-full flex items-center justify-between px-20 bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-t-3xl"
+          className="w-full h-full flex items-center justify-between px-12 bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-t-3xl"
         >
           Get To Know Me
           <div className="animate-slide-right-back">
