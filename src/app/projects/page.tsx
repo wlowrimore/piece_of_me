@@ -43,7 +43,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
         ))}
       <div className="w-screen fixed bottom-0 flex items-center justify-center mt-auto h-[3rem]">
         <Link
-          href="/projects"
+          href="/contact"
           className="w-full h-full flex items-center justify-between px-20 bg-[#304454] text-white text-lg font-semibold rounded-t-3xl"
         >
           Contact Me
