@@ -1,8 +1,50 @@
+"use client";
+
+import { useState } from "react";
 import { GrMailOption } from "react-icons/gr";
 
 const ContactForm: React.FC = () => {
+  const [successMsg, setSuccessMsg] = useState<string>("");
+  const [formValues, setFormValues] = useState({
+    firstName: "",
+    lastName: "",
+    email: "",
+    message: "",
+  });
+
+  const handleChange = (
+    e:
+      | React.ChangeEvent<HTMLInputElement>
+      | React.ChangeEvent<HTMLTextAreaElement>
+  ) => {
+    const { name, value } = e.target;
+    setFormValues((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+    const formData = new FormData();
+
+    Object.entries(formValues).forEach(([key, value]) => {
+      formData.append(key, value);
+    });
+    setSuccessMsg(
+      `Thank you for your message, ${formValues.firstName}. I will get back to you shortly.`
+    );
+    console.log("Form Submitted", formValues);
+    setFormValues({
+      firstName: "",
+      lastName: "",
+      email: "",
+      message: "",
+    });
+  };
+
   return (
-    <form className="w-screen h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg p-6 border border-white/30">
+    <form
+      onSubmit={handleSubmit}
+      className="w-screen h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg p-6 border border-white/30"
+    >
       <div className=" pt-2 pb-4 text-center">
         <h1 className="text-3xl text-white/70 tracking-wide font-semibold uppercase">
           Let&apos;s Create Something
@@ -12,9 +54,11 @@ const ContactForm: React.FC = () => {
         <input
           type="text"
           name="firstName"
-          value=""
+          value={formValues.firstName}
+          onChange={handleChange}
           placeholder="first name"
-          className="p-1 rounded outline-none text-zinc-900 bg-transparent border-b border-white placeholder:text-white/70 placeholder:uppercase placeholder:text-sm focus:emerald-300"
+          className="p-1 rounded outline-none text-white bg-transparent border-b border-white placeholder:text-white/70 placeholder:uppercase placeholder:text-sm focus:emerald-300 tracking-wide"
+          required
         />
       </div>
 
@@ -22,9 +66,9 @@ const ContactForm: React.FC = () => {
         <input
           type="text"
           name="lastName"
-          value=""
           placeholder="last name"
-          className="p-1 rounded outline-none text-zinc-900 bg-transparent border-b border-white placeholder:text-white/70 placeholder:uppercase placeholder:text-sm"
+          className="p-1 rounded outline-none text-white bg-transparent border-b border-white placeholder:text-white/70 placeholder:uppercase placeholder:text-sm"
+          required
         />
       </div>
 
@@ -32,9 +76,11 @@ const ContactForm: React.FC = () => {
         <input
           type="email"
           name="email"
-          value=""
-          placeholder="email"
-          className="p-1 rounded outline-none text-zinc-900 bg-transparent border-b border-white placeholder:text-white/70 placeholder:uppercase placeholder:text-sm"
+          value={formValues.email}
+          onChange={handleChange}
+          placeholder="EMAIL (email@example.com)"
+          className="p-1 rounded outline-none text-white bg-transparent border-b border-white placeholder:text-white/70 placeholder:text-sm"
+          required
         />
       </div>
 
@@ -44,21 +90,28 @@ const ContactForm: React.FC = () => {
         </label>
         <textarea
           name="message"
-          value=""
+          value={formValues.message}
+          onChange={handleChange}
           rows={5}
-          className="p-1 rounded outline-none text-zinc-900 bg-white/50"
+          className="p-1 rounded outline-none text-black font-semibold tracking-wider bg-white/50"
+          required
         />
       </div>
       <div className="w-full">
         <button
           type="submit"
-          className="w-full flex justify-center items-center py-1 px-4 rounded bg-emerald-500/70 text-slate-800 text-2xl"
+          className="w-full flex justify-center items-center py-1 px-4 rounded bg-emerald-500/70 text-slate-800 text-2xl outline-none"
         >
           <GrMailOption />
           &nbsp;
           <span className="text-xl font-semibold">Send Email</span>
         </button>
       </div>
+      {successMsg && (
+        <div className="text-white/70 text-center text-lg font-semibold rounded">
+          {successMsg}
+        </div>
+      )}
     </form>
   );
 };
