@@ -11,7 +11,7 @@ interface ProjectPageProps {
 const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
   console.log("PROJECTS FROM PAGE: ", projects);
   return (
-    <main className="w-screen min-h-screen bg-cyan-100/70 flex flex-col items-center p-4 mx-auto container">
+    <main className="w-screen min-h-screen bg-cyan-100/70 flex flex-col items-center p-4 mx-auto container mb-6">
       <div className="fixed z-10 right-3 top-2 text-zinc-800/90 rounded-full">
         <p className="text-2xl">
           <Link href="/">
@@ -23,7 +23,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
         <h1 className="text-2xl font-semibold my-2 uppercase">
           Project Showcase
         </h1>
-        <p className="font-semibold text-slate-950/70 text-lg">
+        <p className="font-semibold text-slate-950/70 text-lg mb-6">
           Below you will find a few projects that I have selected to showcase my
           skill set. You can find all of my projects, various coding excersises,
           and repositories on my{" "}
