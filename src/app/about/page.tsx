@@ -1,12 +1,16 @@
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 import { TiHome } from "react-icons/ti";
+import NavMobile from "../components/NavMobile";
 
 const About: React.FC = () => {
   return (
     <main className="bg-fixed w-screen min-h-screen bg-about-bg bg-cover bg-center bg-norepeat flex flex-col mx-auto container">
       <div className="bg-zinc-800/70 w-full min-h-screen">
-        <div className="fixed right-3 top-2 text-zinc-400/90 rounded-full">
+        <div className="mt-2 mr-2">
+          <NavMobile />
+        </div>
+        <div className="fixed left-3 top-2 text-zinc-400/90 rounded-full">
           <p className="text-2xl">
             <Link href="/">
               <TiHome />

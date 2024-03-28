@@ -4,10 +4,14 @@ import ReactLogo from "/public/images/languages/react.webp";
 import NextLogo from "/public/images/languages/next.webp";
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
+import NavMobile from "./NavMobile";
 
 const HomeComponent = () => {
   return (
     <>
+      <div className="fixed top-0 right-0 p-1">
+        <NavMobile />
+      </div>
       <div className="flex flex-col items-center">
         <div className="flex items-center">
           <h1 className="bg-[#304454] rounded-full py-4 text-2xl text-[#B89F88] font-semibold uppercase">
