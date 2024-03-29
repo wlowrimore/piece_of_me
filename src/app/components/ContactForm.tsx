@@ -3,6 +3,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ContactFormUISection from "./ContactFormUISection";
+import NavMobile from "./NavMobile";
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -62,14 +63,19 @@ const ContactForm: React.FC = () => {
   };
 
   return (
-    <ContactFormUISection
-      formValues={formValues}
-      handleChange={handleChange}
-      handleSubmit={handleSubmit}
-      successMsg={successMsg}
-      errMsg={errMsg}
-      form={form}
-    />
+    <>
+      <div className="fixed top-1 right-0 p-1">
+        <NavMobile />
+      </div>
+      <ContactFormUISection
+        formValues={formValues}
+        handleChange={handleChange}
+        handleSubmit={handleSubmit}
+        successMsg={successMsg}
+        errMsg={errMsg}
+        form={form}
+      />
+    </>
   );
 };
 

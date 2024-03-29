@@ -12,7 +12,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
   console.log("PROJECTS FROM PAGE: ", projects);
   return (
     <main className="w-screen min-h-screen bg-cyan-100/70 flex flex-col items-center p-4 mx-auto container mb-6">
-      <div className="fixed z-10 right-3 top-2 text-zinc-800/90 rounded-full">
+      <div className="fixed z-10 left-3 top-2 text-zinc-800/90 rounded-full">
         <p className="text-2xl">
           <Link href="/">
             <TiHome />
