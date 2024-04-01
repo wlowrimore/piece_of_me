@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { Project } from "../../../types";
-import NavMobile from "./NavMobile";
+import NavMobile from "./NavMobile/NavMobile";
 import Image from "next/image";
 import Link from "next/link";
 

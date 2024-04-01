@@ -5,6 +5,8 @@ import { usePathname } from "next/navigation";
 import Link from "next/link";
 import { RiLinksFill } from "react-icons/ri";
 
+import styles from "./NavMobile.module.css";
+
 const NavMobile: React.FC = () => {
   const [navOpen, setNavOpen] = useState<boolean>(false);
 
@@ -21,13 +23,13 @@ const NavMobile: React.FC = () => {
   const getNavStyles = (pathname: string) => {
     switch (pathname) {
       case "/":
-        return "bg-slate-700/90 w-[12rem] h-[16rem] pl-4 text-zinc-200";
+        return "bg-slate-700/95 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-200 tracking-widest";
       case "/about":
-        return "bg-[#450A0A]/80 w-[12rem] h-[16rem] pl-4 text-zinc-200";
+        return "bg-[#450A0A]/90 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-200 tracking-widest";
       case "/projects":
-        return "bg-slate-700/90 w-[12rem] h-[16rem] pl-4 text-zinc-200";
+        return "bg-slate-700/95 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-200 tracking-widest";
       case "/contact":
-        return "bg-emerald-700/90 w-[12rem] h-[16rem] pl-4 text-zinc-200";
+        return "bg-emerald-600/90 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-100 tracking-widest font-semibold";
       default:
     }
   };
@@ -36,22 +38,25 @@ const NavMobile: React.FC = () => {
     <main className="pr-1">
       <h1
         onClick={handleNavOpen}
-        className="text-2xl flex justify-end fixed right-3 bg-zinc-200 rounded-full"
+        className="text-xl flex justify-end fixed right-3 bg-black/80 rounded-full text-zinc-100 p-1 border border-zinc-100"
       >
         <RiLinksFill />
       </h1>
-      {navOpen && (
-        <nav
-          className={`fixed right-0 top-0 text-lg font-semibold p-2 rounded-bl-lg w-[8rem] ${getNavStyles(
-            pathname
-          )}`}
-        >
+
+      <nav
+        className={`${styles.nav} ${navOpen ? styles.show : ""} ${getNavStyles(
+          pathname
+        )}`}
+      >
+        <div className="fixed top-2.5 right-3.5">
           <h1
             onClick={handleNavClose}
-            className="text-2xl flex justify-end mr-1 mt-[-0.2rem]"
+            className="text-2xl text-zinc-200 flex justify-end mt-[-0.4rem] px-1"
           >
-            <RiLinksFill />
+            X
           </h1>
+        </div>
+        <div className="py-8">
           <Link href="/">
             <p className="py-1.5 pl-4">Home</p>
           </Link>
@@ -67,8 +72,8 @@ const NavMobile: React.FC = () => {
           <Link href="#">
             <p className="pt-[0.3rem] pb-2 pl-4">Resume</p>
           </Link>
-        </nav>
-      )}
+        </div>
+      </nav>
     </main>
   );
 };

@@ -4,7 +4,7 @@ import ReactLogo from "/public/images/languages/react.webp";
 import NextLogo from "/public/images/languages/next.webp";
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
-import NavMobile from "./NavMobile";
+import NavMobile from "./NavMobile/NavMobile";
 
 const HomeComponent = () => {
   return (

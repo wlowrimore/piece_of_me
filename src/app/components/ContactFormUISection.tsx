@@ -91,7 +91,7 @@ const ContactFormUISection: React.FC<ContactFormUISectionProps> = ({
           value={formValues.message}
           onChange={handleChange}
           rows={5}
-          className="p-1 rounded outline-none text-black font-semibold tracking-wider bg-white/50"
+          className="p-1 rounded outline-none text-black font-semibold tracking-wider bg-white/80"
           required
         />
       </div>

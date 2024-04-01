@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ContactFormUISection from "./ContactFormUISection";
-import NavMobile from "./NavMobile";
+import NavMobile from "./NavMobile/NavMobile";
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-1 right-0 p-1">
+      <div className="fixed top-0 right-0 p-1">
         <NavMobile />
       </div>
       <ContactFormUISection
