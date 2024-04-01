@@ -3,7 +3,7 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
 import ContactFormUISection from "./ContactFormUISection";
-import NavMobile from "./NavMobile/NavMobile";
+import NavMobile from "../NavMobile/NavMobile";
 
 const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);

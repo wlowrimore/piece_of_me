@@ -9,6 +9,7 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
+        "resume-bg": "url('/images/rock_balance.webp')",
         "contact-bg": "url('/images/chalk_family.webp')",
         "about-bg": "url('/images/bass_will.webp')",
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

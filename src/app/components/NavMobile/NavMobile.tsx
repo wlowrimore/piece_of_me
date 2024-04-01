@@ -69,7 +69,7 @@ const NavMobile: React.FC = () => {
           <Link href="/contact">
             <p className="py-1.5 pl-4">Contact</p>
           </Link>
-          <Link href="#">
+          <Link href="/resume">
             <p className="pt-[0.3rem] pb-2 pl-4">Resume</p>
           </Link>
         </div>

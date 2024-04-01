@@ -6,7 +6,7 @@ import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 import NavMobile from "./NavMobile/NavMobile";
 
-const HomeComponent = () => {
+const HomeComponent: React.FC = () => {
   return (
     <>
       <div className="fixed top-0 right-0 p-1">
