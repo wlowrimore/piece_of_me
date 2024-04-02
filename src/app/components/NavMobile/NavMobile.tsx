@@ -30,6 +30,8 @@ const NavMobile: React.FC = () => {
         return "bg-slate-700/95 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-200 tracking-widest";
       case "/contact":
         return "bg-emerald-600/90 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-100 tracking-widest font-semibold";
+      case "/resume":
+        return "bg-blue-300/95 w-full h-[17rem] border-b border-zinc-400 pl-4 text-zinc-950 tracking-widest";
       default:
     }
   };

@@ -33,8 +33,8 @@ const ContactFormUISection: React.FC<ContactFormUISectionProps> = ({
       onSubmit={handleSubmit}
       className="w-screen h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg p-6 border border-white/30"
     >
-      <div className=" pt-2 pb-4 text-center">
-        <h1 className="text-3xl text-white/70 tracking-wide font-semibold uppercase">
+      <div className="pb-10 text-center">
+        <h1 className="text-2xl text-white/70 tracking-wide font-semibold uppercase">
           Let&apos;s Create Something
         </h1>
       </div>

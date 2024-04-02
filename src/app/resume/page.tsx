@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TiHome } from "react-icons/ti";
-import ResumeComponent from "../components/Contact/Resume/ResumeComponent";
+import ResumeComponent from "../components/Resume/ResumeComponent";
 
 const Resume: React.FC = () => {
   return (
