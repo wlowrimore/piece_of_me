@@ -13,7 +13,7 @@ const ResumeComponent: React.FC = () => {
             William Lowrimore
           </h1>
           <div className="mt-[-0.5rem] flex flex-col text-purple-200 tracking-wider items-center">
-            <p className="mb-[-0.3rem]">linkedin.com/william-lowrimore-dev</p>
+            <p className="mb-[-0.4rem]">linkedin/william-lowrimore-dev</p>
             <p>wlowrimore@gmail.com</p>
             <div className="flex justify-center mt-[-0.3rem] gap-2">
               <p>901.568.7941</p>
