@@ -10,7 +10,7 @@ const Title: React.FC = () => {
       <h1 className="text-3xl text-center font-semibold tracking-wider text-zinc-200 uppercase">
         William Lowrimore
       </h1>
-      <article className="flex items-center gap-4 w-full">
+      <article className="flex items-center justify-center gap-4 w-full">
         <Link
           href="mailto://wlowrimore@gmail.com"
           target="_blank"
