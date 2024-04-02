@@ -1,5 +1,6 @@
 import Link from "next/link";
 import { TiHome } from "react-icons/ti";
+import ResumeComponent from "../components/Contact/Resume/ResumeComponent";
 
 const Resume: React.FC = () => {
   return (
@@ -13,6 +14,7 @@ const Resume: React.FC = () => {
               </Link>
             </p>
           </div>
+          <ResumeComponent />
         </div>
       </div>
     </>
