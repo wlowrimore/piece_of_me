@@ -38,7 +38,7 @@ const NavMobile: React.FC = () => {
     <main className="pr-1">
       <h1
         onClick={handleNavOpen}
-        className="text-xl flex justify-end fixed right-3 bg-black/80 rounded-full text-zinc-100 p-1 border border-zinc-100"
+        className="text-xl flex justify-end fixed right-3 bg-black/10 rounded-full text-zinc-100 p-1"
       >
         <RiLinksFill />
       </h1>

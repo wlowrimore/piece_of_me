@@ -1,5 +1,4 @@
 import LinksSection from "./LinksSection";
-import Subtitle from "./Subtitle";
 import Title from "./Title";
 
 const ResumeComponent: React.FC = () => {
@@ -8,7 +7,7 @@ const ResumeComponent: React.FC = () => {
       <div className="py-4">
         <Title />
       </div>
-      <Subtitle />
+
       <LinksSection />
     </main>
   );
