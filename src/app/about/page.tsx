@@ -17,7 +17,7 @@ const About: React.FC = () => {
             </Link>
           </p>
         </div>
-        <div className="flex flex-col w-full px-6 pt-8 pb-14 justify-center">
+        <div className="flex flex-col w-full px-6 pt-16 pb-20 justify-center">
           <h1 className="py-3 text-2xl text-zinc-100 uppercase">Hey there!</h1>
           <p className="text-white text-lg mb-[0.88rem]">
             I'm William Lowrimore, a Frontend Developer from Nashville, TN. I

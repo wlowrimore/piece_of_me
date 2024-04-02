@@ -18,7 +18,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
           </Link>
         </p>
       </div>
-      <div className="mt-4">
+      <div className="mt-12">
         <h1 className="text-2xl font-semibold my-2 uppercase">
           Project Showcase
         </h1>
