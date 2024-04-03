@@ -23,10 +23,10 @@ const HomeComponent: React.FC = () => {
           alt="William Lowrimore"
           width={1000}
           height={1000}
-          className="opacity-90 mb-12"
+          className="opacity-90"
         />
       </div>
-      <div className="absolute z-50 left-[45%] top-[40%] animate-pulse">
+      <div className="absolute z-50 left-[45%] top-[47%]">
         <Image
           src={ReactLogo}
           alt="React Logo"
@@ -35,7 +35,7 @@ const HomeComponent: React.FC = () => {
           className="opacity-50"
         />
       </div>
-      <div className="absolute z-50 left-[20%] bottom-[45%] animate-pulse">
+      <div className="absolute z-50 left-[25%] bottom-[40%]">
         <Image
           src={NextLogo}
           alt="Next Logo"
@@ -44,7 +44,7 @@ const HomeComponent: React.FC = () => {
           className="opacity-50"
         />
       </div>
-      <div className="absolute z-50 left-[12%] bottom-[30%] animate-pulse">
+      <div className="absolute z-50 left-[16%] bottom-[26%]">
         <Image
           src={TSLogo}
           alt="TypeScript Logo"
@@ -53,7 +53,7 @@ const HomeComponent: React.FC = () => {
           className="opacity-50"
         />
       </div>
-      <div className="absolute z-50 left-20 bottom-[15%] animate-pulse">
+      <div className="absolute z-50 left-24 bottom-[12%]">
         <Image
           src={TWLogo}
           alt="Tailwind Logo"

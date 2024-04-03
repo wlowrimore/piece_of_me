@@ -58,7 +58,7 @@ const NavMobile: React.FC = () => {
             X
           </h1>
         </div>
-        <div className="py-8">
+        <div className="py-8 z-50">
           <Link href="/">
             <p className="py-1.5 pl-4">Home</p>
           </Link>
