@@ -17,49 +17,13 @@ const HomeComponent: React.FC = () => {
         <NavMobile />
       </div>
       <HomeHeaderComponent />
-      <div className="absolute bottom-[-2rem] right-[-4rem]">
+      <div className="absolute bottom-[-5rem] right-[-6rem]">
         <Image
           src={Avatar}
           alt="William Lowrimore"
           width={1000}
           height={1000}
           className="opacity-90"
-        />
-      </div>
-      <div className="absolute z-50 left-[45%] top-[47%]">
-        <Image
-          src={ReactLogo}
-          alt="React Logo"
-          width={46}
-          height={46}
-          className="opacity-50"
-        />
-      </div>
-      <div className="absolute z-50 left-[25%] bottom-[40%]">
-        <Image
-          src={NextLogo}
-          alt="Next Logo"
-          width={38}
-          height={38}
-          className="opacity-50"
-        />
-      </div>
-      <div className="absolute z-50 left-[16%] bottom-[26%]">
-        <Image
-          src={TSLogo}
-          alt="TypeScript Logo"
-          width={32}
-          height={32}
-          className="opacity-50"
-        />
-      </div>
-      <div className="absolute z-50 left-24 bottom-[12%]">
-        <Image
-          src={TWLogo}
-          alt="Tailwind Logo"
-          width={44}
-          height={44}
-          className="opacity-50"
         />
       </div>
       <div className="z-20 w-screen flex items-center justify-center mt-auto h-[3rem]">

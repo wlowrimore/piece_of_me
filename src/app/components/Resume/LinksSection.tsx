@@ -3,12 +3,36 @@
 import { useState } from "react";
 import { FaRegEye } from "react-icons/fa";
 import TechSkills from "../Modals/TechSkills";
+import Experience from "../Modals/Experience";
+import Education from "../Modals/Education";
+import Certifications from "../Modals/Certifications";
+import Testimonials from "../Modals/Testimonials";
 
 const LinksSection: React.FC = () => {
   const [techSkillsOpen, setTechSkillsOpen] = useState<boolean>(false);
+  const [experienceOpen, setExperienceOpen] = useState<boolean>(false);
+  const [educationOpen, setEducationOpen] = useState<boolean>(false);
+  const [certificationsOpen, setCertificationsOpen] = useState<boolean>(false);
+  const [testimonialsOpen, setTestimonialsOpen] = useState<boolean>(false);
 
   const handleOpenTechSkills = (): void => {
     setTechSkillsOpen(!techSkillsOpen);
+  };
+
+  const handleOpenExperience = (): void => {
+    setExperienceOpen(!experienceOpen);
+  };
+
+  const handleOpenEducation = (): void => {
+    setEducationOpen(!educationOpen);
+  };
+
+  const handleOpenCertifications = (): void => {
+    setCertificationsOpen(!certificationsOpen);
+  };
+
+  const handleOpenTestimonials = (): void => {
+    setTestimonialsOpen(!testimonialsOpen);
   };
 
   return (
@@ -23,25 +47,37 @@ const LinksSection: React.FC = () => {
           </span>
           Technical Skills
         </li>
-        <li className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between">
+        <li
+          onClick={handleOpenExperience}
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+        >
           <span>
             <FaRegEye />
           </span>
           Experience
         </li>
-        <li className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between">
+        <li
+          onClick={handleOpenEducation}
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+        >
           <span>
             <FaRegEye />
           </span>
           Education
         </li>
-        <li className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between">
+        <li
+          onClick={handleOpenCertifications}
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+        >
           <span>
             <FaRegEye />
           </span>
           Certifications
         </li>
-        <li className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between">
+        <li
+          onClick={handleOpenTestimonials}
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+        >
           <span>
             <FaRegEye />
           </span>
@@ -51,7 +87,19 @@ const LinksSection: React.FC = () => {
       <div className="w-full text-center mt-12 py-2 px-6 bg-blue-300 rounded-3xl">
         <p className="text-zinc-950 font-semibold">Download Printable Resume</p>
       </div>
-      {techSkillsOpen && <TechSkills />}
+      {techSkillsOpen && (
+        <TechSkills handleOpenTechSkills={handleOpenTechSkills} />
+      )}
+      {experienceOpen && (
+        <Experience handleOpenExperience={handleOpenExperience} />
+      )}
+      {educationOpen && <Education handleOpenEducation={handleOpenEducation} />}
+      {certificationsOpen && (
+        <Certifications handleOpenCertifications={handleOpenCertifications} />
+      )}
+      {testimonialsOpen && (
+        <Testimonials handleOpenTestimonials={handleOpenTestimonials} />
+      )}
     </div>
   );
 };

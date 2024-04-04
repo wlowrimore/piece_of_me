@@ -1,10 +1,20 @@
-const TechSkills: React.FC = () => {
+type TechSkillsProps = {
+  handleOpenTechSkills: () => void;
+};
+
+const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
   return (
-    <div className="fixed inset-0 bg-zinc-400/60 backdrop-blur-sm">
-      <div className="flex flex-col items-center justify-center bg-zinc-200 my-12 mx-8 px-4 py-8 border-2 border-zinc-800 rounded-lg">
+    <div className="fixed inset-0 backdrop-blur-sm">
+      <div className="relative flex flex-col items-center justify-center bg-zinc-200 mt-8 mx-4 px-4 py-8 border-2 border-zinc-800 rounded-lg">
         <h1 className="text-3xl text-indigo-800 font-semibold">
           Technical Skills
         </h1>
+        <p
+          onClick={handleOpenTechSkills}
+          className="text-2xl font-bold text-red-500 absolute top-2 right-2"
+        >
+          X
+        </p>
         <div className="text-black w-full px-4 pt-5">
           <p className="text-start font-semibold">Languages:</p>
           <div className="w-full grid grid-cols-2 text-sm">
