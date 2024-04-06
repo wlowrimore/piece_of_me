@@ -17,13 +17,13 @@ const HomeComponent: React.FC = () => {
         <NavMobile />
       </div>
       <HomeHeaderComponent />
-      <div className="absolute bottom-[-5rem] right-[-6rem]">
+      <div className="absolute bottom-[-4.5rem] right-[-7.5rem]">
         <Image
           src={Avatar}
           alt="William Lowrimore"
           width={1000}
           height={1000}
-          className="opacity-90"
+          className="opacity-90 w-[90%]"
         />
       </div>
       <div className="z-20 w-screen flex items-center justify-center mt-auto h-[3rem]">

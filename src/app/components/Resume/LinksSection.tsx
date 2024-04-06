@@ -2,11 +2,14 @@
 
 import { useState } from "react";
 import { FaRegEye } from "react-icons/fa";
+import Link from "next/link";
+// Modal Imports
 import TechSkills from "../Modals/TechSkills";
 import Experience from "../Modals/Experience";
 import Education from "../Modals/Education";
 import Certifications from "../Modals/Certifications";
 import Testimonials from "../Modals/Testimonials";
+import ResumeDownload from "./ResumeDownload";
 
 const LinksSection: React.FC = () => {
   const [techSkillsOpen, setTechSkillsOpen] = useState<boolean>(false);
@@ -84,9 +87,21 @@ const LinksSection: React.FC = () => {
           Testimonials
         </li>
       </ul>
-      <div className="w-full text-center mt-12 py-2 px-6 bg-blue-300 rounded-3xl">
-        <p className="text-zinc-950 font-semibold">Download Printable Resume</p>
-      </div>
+      {/* <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 py-2 px-6 bg-blue-300 rounded-3xl">
+        <Link
+          href="/resume/williamLowrimoreResume.pdf"
+          target="_blank"
+          rel="noreferrer noopener"
+          download="williamLowrimoreResume.pdf"
+        >
+          Download Printable Resume
+        </Link>
+      </div> */}
+      <ResumeDownload
+        downloadSuccess={false}
+        handleDownload={() => {}}
+        parentNode={null}
+      />
       {techSkillsOpen && (
         <TechSkills handleOpenTechSkills={handleOpenTechSkills} />
       )}
