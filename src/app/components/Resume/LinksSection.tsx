@@ -40,7 +40,7 @@ const LinksSection: React.FC = () => {
 
   return (
     <div className="w-full pt-10 text-white">
-      <ul className="space-y-8 flex flex-col">
+      <ul className="space-y-8 md:space-y-12 md:px-20 flex flex-col">
         <li
           onClick={handleOpenTechSkills}
           className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
@@ -87,16 +87,6 @@ const LinksSection: React.FC = () => {
           Testimonials
         </li>
       </ul>
-      {/* <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 py-2 px-6 bg-blue-300 rounded-3xl">
-        <Link
-          href="/resume/williamLowrimoreResume.pdf"
-          target="_blank"
-          rel="noreferrer noopener"
-          download="williamLowrimoreResume.pdf"
-        >
-          Download Printable Resume
-        </Link>
-      </div> */}
       <ResumeDownload
         downloadSuccess={false}
         handleDownload={() => {}}

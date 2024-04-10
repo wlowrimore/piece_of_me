@@ -5,23 +5,29 @@ type ExperienceProps = {
 const Experience: React.FC<ExperienceProps> = ({ handleOpenExperience }) => {
   return (
     <div className="fixed inset-0 backdrop-blur-sm">
-      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 mx-4 px-4 pt-72 pb-16 border-2 border-zinc-800 rounded-lg overflow-scroll">
-        <h1 className="text-3xl text-indigo-800 font-semibold">Experience</h1>
+      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 md:mt-12 mx-4 px-4 pt-[34rem] md:pt-32 pb-16 md:pb-0 border-2 border-zinc-800 rounded-lg overflow-scroll">
+        <h1 className="text-3xl md:text-4xl md:mt-[-12rem] md:pb-12 text-indigo-800 font-semibold">
+          Experience
+        </h1>
         <p
           onClick={handleOpenExperience}
-          className="text-2xl font-bold text-red-500 fixed top-10 right-8"
+          className="text-2xl md:text-3xl font-bold text-red-500 fixed top-10 md:top-[4.5rem] right-8 md:right-10"
         >
           X
         </p>
         <div className="text-black w-full px-4 pt-5">
-          <h2 className="font-semibold">
+          <h2 className="font-semibold md:text-xl">
             Web Developer,{" "}
-            <span className="text-sm font-normal">Upwork, Nashville, TN</span>
+            <span className="text-sm md:text-lg font-normal">
+              Upwork, Nashville, TN
+            </span>
           </h2>
-          <p className="text-sm font-light italic">November 2022 - Present</p>
+          <p className="text-sm md:text-lg font-light italic">
+            November 2022 - Present
+          </p>
         </div>
 
-        <div className="text-black text-sm w-full pl-8 pr-4 pt-3">
+        <div className="text-black text-sm md:text-lg w-full pl-8 pr-4 pt-3">
           <ul className="list-disc space-y-2">
             <li>
               Restructured a client's website to be mobile responsive and
@@ -44,19 +50,23 @@ const Experience: React.FC<ExperienceProps> = ({ handleOpenExperience }) => {
             </li>
           </ul>
         </div>
-
+        <div className="w-full h-[0.05rem] mt-6 bg-zinc-400">
+          <hr />
+        </div>
         <div className="text-black w-full px-4 pt-5">
-          <h2 className="font-semibold">
+          <h2 className="font-semibold md:text-xl">
             Junior Software Engineer,{" "}
-            <span className="text-sm font-normal">Coroutine, Boulder, CO</span>
+            <span className="text-sm md:text-lg font-normal">
+              Coroutine, Boulder, CO
+            </span>
           </h2>
-          <p className="text-sm font-light italic">
+          <p className="text-sm md:text-lg font-light italic">
             September 2022 - November 2022
           </p>
         </div>
 
         <div className="text-black text-sm w-full pl-8 pr-4 pt-3">
-          <ul className="list-disc space-y-2">
+          <ul className="list-disc space-y-2 md:text-lg">
             <li>
               Contributed to the development team by writing{" "}
               <strong>Unit Tests</strong> for the <strong>Frontend</strong> of

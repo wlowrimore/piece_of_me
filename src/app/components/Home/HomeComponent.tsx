@@ -9,6 +9,7 @@ import { HiChevronRight } from "react-icons/hi";
 import NavMobile from "../NavMobile/NavMobile";
 import HomeHeaderComponent from "./HomeHeaderComponent";
 import Image from "next/image";
+import Testimonies from "./TestimonySnippets/Testimonies";
 
 const HomeComponent: React.FC = () => {
   return (
@@ -17,13 +18,16 @@ const HomeComponent: React.FC = () => {
         <NavMobile />
       </div>
       <HomeHeaderComponent />
-      <div className="absolute bottom-[-4.5rem] right-[-7.5rem]">
+      <div className="hidden md:flex fixed z-50 top-24 px-6">
+        <Testimonies />
+      </div>
+      <div className="absolute bottom-[-4.5rem] right-[-7.5rem] md:bottom-0 md:right-[-6rem]">
         <Image
           src={Avatar}
           alt="William Lowrimore"
           width={1000}
           height={1000}
-          className="opacity-90 w-[90%]"
+          className="opacity-90 w-[90%] md:w-[30rem]"
         />
       </div>
       <div className="z-20 w-screen flex items-center justify-center mt-auto h-[3rem]">

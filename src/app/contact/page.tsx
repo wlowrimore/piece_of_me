@@ -9,13 +9,13 @@ import { HiChevronRight } from "react-icons/hi";
 
 const Contact: React.FC = () => {
   return (
-    <div className="w-screen min-h-screen bg-contact-bg bg-cover bg-center bg-norepeat flex flex-col items-center justify-center mx-auto container">
+    <div className="w-screen min-h-screen bg-contact-bg bg-cover bg-center bg-norepeat flex flex-col items-center justify-center mx-auto">
       <div className="fixed left-3 top-2 text-zinc-300/90 rounded-full">
         <p className="text-2xl">
           <Link href="/">
             <TiHome />
           </Link>
-          <div className="fixed left-[32%] top-[18%] opacity-70 flex gap-4">
+          <div className="fixed left-[32%] top-2 opacity-70 flex gap-4">
             <Link
               href="mailto://wlowrimore@gmail.com"
               target="_blank"

@@ -27,13 +27,13 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 p-1">
+      <div className="fixed top-0 right-2 p-1">
         <NavMobile />
       </div>
       <main className="flex flex-col items-center">
         <div className="relative mb-12">
           <div
-            className="absolute inset-0 p-4 bg-black/70 flex items-center justify-center rounded-lg transition-opacity duration-300"
+            className="absolute inset-0 px-4 bg-black/70 flex items-center justify-center rounded-lg transition-opacity duration-300"
             style={{
               opacity: project && visibleOverlayId === project.id ? 1 : 0,
             }}
@@ -77,7 +77,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
             alt={project.title || ""}
             width={1000}
             height={1000}
-            className="rounded-lg border-2 border-zinc-700 shadow-lg shadow-zinc-800"
+            className="lg:w-[32rem] rounded-lg border-2 border-zinc-700 shadow-lg shadow-zinc-800"
           />
         </div>
       </main>

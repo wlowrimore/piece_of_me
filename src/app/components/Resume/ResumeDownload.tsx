@@ -38,13 +38,13 @@ const ResumeDownload: React.FC<ResumeDownloadProps> = () => {
 
   return (
     <>
-      <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 py-2 px-6 bg-blue-300 rounded-3xl">
+      <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 md:mx-20 md:w-auto py-2 px-2 bg-blue-300 rounded-xl">
         <button onClick={handleDownload} type="button">
           Download Printable Resume
         </button>
       </div>
       {downloadSuccess && (
-        <p className="absolute w-full z-10 top-96 right-0 py-3 bg-green-500 text-white text-xl tracking-wide text-center font-bold">
+        <p className="absolute w-full z-10 top-96 md:top-[31rem] right-0 py-3 bg-green-500/60 text-white text-xl md:text-3xl md:py-6 tracking-wide text-center font-bold">
           Download Successful!
           <span
             onClick={(e) => setDownloadSuccess(false)}
@@ -55,7 +55,7 @@ const ResumeDownload: React.FC<ResumeDownloadProps> = () => {
         </p>
       )}
       {downloadFailure && (
-        <p className="absolute w-full z-10 top-96 right-0 py-3 bg-red-500 text-white text-xl tracking-wide text-center font-bold">
+        <p className="absolute w-full z-10 top-96 md:top-[31rem] right-0 py-3 bg-red-500/60 text-white text-xl md:text-3xl md:py-6 tracking-wide text-center font-bold">
           Download Failed!
           <span
             onClick={(e) => setDownloadFailure(false)}

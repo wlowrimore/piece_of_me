@@ -3,7 +3,7 @@
     "id": 1,
     "title": "News Link Now",
     "imageUrl": "/images/project_images/newsLinkNow.webp",
-    "desc": "News Link Now provides up-to-date news using the New York Times API.  Users can search for topics via a search popup modal.  News Link Now is SEO compliant, including detailed metadata for every page.  This is a dynamic and mobile friendly application created using React, Next.JS, and Tailwind.",
+    "desc": "News Link Now provides up-to-date news using the New York Times API.  Users can search for topics via a search popup modal.  News Link Now is SEO compliant, including detailed metadata for every page.  Created using React, Next.JS, and Tailwind.",
     "githubUrl": "https://github.com/wlowrimore/all_news",
     "liveUrl": "https://news-link-now.vercel.app/"
   },
@@ -19,7 +19,7 @@
     "id": 3,
     "title": "Where in The World?",
     "imageUrl": "/images/project_images/countries.webp",
-    "desc": "Where in The World is a challenge project that I completed for Frontend Mentor.  It features country data fetched from the REST Countries API.  Users can search by any country name worldwide or use the dropdown to filter by region.  This app was built using React, Next.JS, and Tailwind",
+    "desc": "Where in The World is a project that I completed for Frontend Mentor.  It features country data fetched from the REST Countries API.  Users can search by any country's name or use the dropdown to filter by region.  Created using React, Next.JS, and Tailwind",
     "githubUrl": "https://github.com/wlowrimore/frontend-mentor-rest-countries-api",
     "liveUrl": "https://searchrestcountriesapi.vercel.app/"
   },

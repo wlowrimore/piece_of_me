@@ -31,10 +31,10 @@ const ContactFormUISection: React.FC<ContactFormUISectionProps> = ({
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="w-screen h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg p-6 border border-white/30"
+      className="w-screen min-h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg px-6 md:px-24 py-14 md:py-20 lg:pt-32 border border-white/30 md:space-y-10"
     >
       <div className="pb-10 text-center">
-        <h1 className="text-2xl text-white/70 tracking-wide font-semibold uppercase">
+        <h1 className="text-2xl md:text-3xl text-white/70 tracking-wide font-semibold uppercase">
           Let&apos;s Create Something
         </h1>
       </div>
@@ -98,7 +98,7 @@ const ContactFormUISection: React.FC<ContactFormUISectionProps> = ({
       <div className="w-full">
         <button
           type="submit"
-          className="w-full flex justify-center items-center py-1 px-4 rounded bg-emerald-500/70 text-slate-800 text-2xl outline-none"
+          className="w-full flex justify-center items-center py-1 md:py-3 px-4 rounded bg-emerald-500/70 text-slate-800 text-2xl outline-none"
         >
           <GrMailOption />
           &nbsp;

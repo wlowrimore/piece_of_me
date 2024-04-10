@@ -10,7 +10,7 @@ interface ProjectPageProps {
 
 const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
   return (
-    <main className="w-screen min-h-screen bg-cyan-100/70 flex flex-col items-center p-4 mx-auto container mb-6">
+    <main className="w-screen min-h-screen bg-gradient-to-t from-[#304454]/80 to-[#B89F88] flex flex-col items-center p-4 md:p-16 mx-auto mb-6">
       <div className="fixed z-10 left-3 top-2 text-zinc-800/90 rounded-full">
         <p className="text-2xl">
           <Link href="/">
@@ -18,28 +18,32 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
           </Link>
         </p>
       </div>
-      <div className="mt-12">
-        <h1 className="text-2xl font-semibold my-2 uppercase">
-          Project Showcase
-        </h1>
-        <p className="font-semibold text-slate-950/70 text-lg mb-6">
-          Below you will find a few projects that I have selected to showcase my
-          skill set. You can find all of my projects, various coding excersises,
-          and repositories on my{" "}
-          <Link
-            href="https://github.com/wlowrimore"
-            target="_blank"
-            rel="noreferrer"
-            className="text-red-900/80 font-semibold underline"
-          >
-            Github&nbsp;page.
-          </Link>
-        </p>
+      <div className="mt-12 md:px-6">
+        <div className="">
+          <h1 className="text-2xl md:text-3xl font-semibold my-2 uppercase">
+            Project Showcase
+          </h1>
+          <p className="font-semibold text-slate-950/70 text-lg md:text-xl">
+            Below you will find a few projects that I have selected to showcase
+            my skill set. You can find all of my projects, various coding
+            excersises, and repositories on my{" "}
+            <Link
+              href="https://github.com/wlowrimore"
+              target="_blank"
+              rel="noreferrer"
+              className="text-red-900/80 font-semibold underline"
+            >
+              Github&nbsp;page.
+            </Link>
+          </p>
+        </div>
       </div>
-      {projectsData &&
-        projectsData.map((project: Project) => (
-          <ProjectComponent key={project.id} project={project} />
-        ))}
+      <div className="mt-12 md:grid grid-cols-2 md:w-[40rem] lg:w-full md:gap-10 gap-4">
+        {projectsData &&
+          projectsData.map((project: Project) => (
+            <ProjectComponent key={project.id} project={project} />
+          ))}
+      </div>
       <div className="w-screen fixed bottom-0 flex items-center justify-center mt-auto h-[3rem]">
         <Link
           href="/contact"
