@@ -7,7 +7,7 @@ import GitHubIcon from "/public/images/contact/github.webp";
 const Title: React.FC = () => {
   return (
     <div className="py-4 md:pb-20">
-      <div className="flex flex-col w-full gap-2 md:gap-4">
+      <div className="flex flex-col w-full gap-2 md:gap-4 2xl:mt-[-8rem]">
         <h1 className="text-2xl md:text-[2.5rem] text-center font-semibold tracking-wider text-zinc-200 uppercase">
           William Lowrimore
         </h1>

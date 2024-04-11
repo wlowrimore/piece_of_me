@@ -31,10 +31,10 @@ const ContactFormUISection: React.FC<ContactFormUISectionProps> = ({
     <form
       ref={form}
       onSubmit={handleSubmit}
-      className="w-screen min-h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg px-6 md:px-24 py-14 md:py-20 lg:pt-32 border border-white/30 md:space-y-10"
+      className="w-screen min-h-screen flex flex-col gap-6 items-center justify-center bg-gray-900/60 rounded-lg px-6 md:px-24 lg:px-44 xl:px-64 2xl:px-[44rem] py-14 md:py-20 lg:pt-32 border border-white/30 md:space-y-10"
     >
-      <div className="pb-10 text-center">
-        <h1 className="text-2xl md:text-3xl text-white/70 tracking-wide font-semibold uppercase">
+      <div className="pb-10 2xl:pb-5 text-center">
+        <h1 className="text-2xl md:text-3xl 2xl:text-5xl 2xl:pt-10 text-white/70 tracking-wide font-semibold uppercase">
           Let&apos;s Create Something
         </h1>
       </div>

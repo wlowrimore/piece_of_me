@@ -42,7 +42,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
           >
             <div className="flex flex-col items-center text-white gap-6">
               <p>{project && project.desc}</p>
-              <div className="flex gap-6">
+              <div className="flex gap-6 justify-center">
                 <Link
                   href={project && project.githubUrl ? project.githubUrl : "/"}
                   target="_blank"
@@ -77,7 +77,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
             alt={project.title || ""}
             width={1000}
             height={1000}
-            className="lg:w-[32rem] rounded-lg border-2 border-zinc-700 shadow-lg shadow-zinc-800"
+            className="lg:w-[32rem] rounded-xl border-2 border-zinc-700 shadow-lg shadow-zinc-800"
           />
         </div>
       </main>

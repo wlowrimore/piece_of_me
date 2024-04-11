@@ -38,7 +38,7 @@ const ResumeDownload: React.FC<ResumeDownloadProps> = () => {
 
   return (
     <>
-      <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 md:mx-20 md:w-auto py-2 px-2 bg-blue-300 rounded-xl">
+      <div className="w-full text-lg text-zinc-950 font-bold text-center mt-12 md:mx-20 lg:mx-44 xl:mx-64 2xl:mx-[44rem] md:w-auto py-2 px-2 bg-blue-300 rounded-xl">
         <button onClick={handleDownload} type="button">
           Download Printable Resume
         </button>

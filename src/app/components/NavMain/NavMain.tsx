@@ -3,7 +3,7 @@ import Link from "next/link";
 const NavMain: React.FC = () => {
   return (
     <nav className="hidden md:inline-flex fixed w-full top-0 z-50">
-      <div className="flex bg-[#304454] py-2 border-b border-zinc-200 text-white text-xl justify-around w-full mx-auto">
+      <div className="flex bg-[#304454]/50 py-2 border-b border-zinc-200 text-white text-xl justify-around w-full mx-auto 2xl:justify-center 2xl:gap-[12rem]">
         <Link href="/">
           <p className="py-1.5 pl-4">Home</p>
         </Link>

@@ -8,7 +8,7 @@ const Certifications: React.FC<CertificationsProps> = ({
   return (
     <div className="fixed inset-0 backdrop-blur-sm">
       <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 mx-4 px-4 py-8 border-2 border-zinc-800 rounded-lg">
-        <h1 className="text-3xl md:text-4xl md:mt-[-18rem] md:pb-12 text-indigo-800 font-semibold">
+        <h1 className="text-3xl md:text-4xl md:mt-[-18rem] md:pb-12 lg:pt-80 text-indigo-800 font-semibold">
           Certifications
         </h1>
         <p

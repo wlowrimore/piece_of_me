@@ -21,7 +21,7 @@ const HomeComponent: React.FC = () => {
       <div className="hidden md:flex fixed z-50 top-24 px-6">
         <Testimonies />
       </div>
-      <div className="absolute bottom-[-4.5rem] right-[-7.5rem] md:bottom-0 md:right-[-6rem]">
+      <div className="absolute bottom-[-4.9rem] right-[-7.5rem] md:bottom-[-2.8rem] md:right-[-6rem] lg:bottom-[-3.5rem] 2xl:bottom-[-4.5rem]">
         <Image
           src={Avatar}
           alt="William Lowrimore"

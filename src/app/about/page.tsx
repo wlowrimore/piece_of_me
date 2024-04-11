@@ -18,7 +18,7 @@ const About: React.FC = () => {
             </Link>
           </p>
         </div>
-        <div className="flex flex-col w-full px-6 pt-16 md:pt-32 md:px-20 pb-20 justify-center">
+        <div className="flex flex-col w-full px-6 pt-16 md:pt-32 md:px-20 pb-20 lg:pb-10 2xl:container 2xl:mx-auto 2xl:py-44 justify-center">
           <h1 className="py-3 text-2xl md:text-3xl text-zinc-100 md:text-zinc-200 uppercase">
             Hey there!
           </h1>

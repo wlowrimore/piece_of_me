@@ -40,7 +40,7 @@ const LinksSection: React.FC = () => {
 
   return (
     <div className="w-full pt-10 text-white">
-      <ul className="space-y-8 md:space-y-12 md:px-20 flex flex-col">
+      <ul className="space-y-8 md:space-y-12 md:px-20 lg:px-44 xl:px-64 2xl:px-[44rem]  flex flex-col">
         <li
           onClick={handleOpenTechSkills}
           className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"

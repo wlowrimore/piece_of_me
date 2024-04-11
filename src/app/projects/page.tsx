@@ -18,9 +18,9 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
           </Link>
         </p>
       </div>
-      <div className="mt-12 md:px-6">
+      <div className="mt-12 md:px-6 lg:px-0 xl:px-16 2xl:container 2xl:px-56">
         <div className="">
-          <h1 className="text-2xl md:text-3xl font-semibold my-2 uppercase">
+          <h1 className="text-2xl md:text-3xl 2xl:text-5xl font-semibold my-2 uppercase">
             Project Showcase
           </h1>
           <p className="font-semibold text-slate-950/70 text-lg md:text-xl">
@@ -38,7 +38,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
           </p>
         </div>
       </div>
-      <div className="mt-12 md:grid grid-cols-2 md:w-[40rem] lg:w-full md:gap-10 gap-4">
+      <div className="mt-12 md:grid grid-cols-2 md:w-[40rem] lg:w-full 2xl:w-[70rem] md:gap-10 gap-4 2xl:container 2xl:gap-10">
         {projectsData &&
           projectsData.map((project: Project) => (
             <ProjectComponent key={project.id} project={project} />

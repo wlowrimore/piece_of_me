@@ -7,7 +7,7 @@ import GitHubIcon from "/public/images/contact/github.webp";
 
 const AboutLinks: React.FC = () => {
   return (
-    <main className="w-full flex items-center justify-center gap-12 lg:mt-[-3.5rem]">
+    <main className="w-full h-full flex items-center justify-center gap-12 lg:pb-20  xl:mt-[-1rem] 2xl:mt-[-5rem] overflow-y-scroll">
       <div>
         <Link href="mailto://wlowrimore@gmail.com">
           <Image
