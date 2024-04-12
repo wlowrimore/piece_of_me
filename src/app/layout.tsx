@@ -21,6 +21,9 @@ export const metadata: Metadata = {
       {
         url: "https://res.cloudinary.com/dxvvq6h1x/image/upload/v1712924384/will_avatar_ctz0rg.webp",
       },
+      {
+        url: "https://res.cloudinary.com/dxvvq6h1x/image/upload/v1712934327/site-sample_fyhmn8.webp",
+      },
     ],
   },
 };
