@@ -1,13 +1,14 @@
 "use client";
 
 import Avatar from "/public/images/will_avatar.webp";
-
 import Link from "next/link";
+import Image from "next/image";
+
 import { HiChevronRight } from "react-icons/hi";
 import { Fade } from "react-awesome-reveal";
+
 import NavMobile from "../NavMobile/NavMobile";
 import HomeHeaderComponent from "./HomeHeaderComponent";
-import Image from "next/image";
 import Testimonies from "./TestimonySnippets/Testimonies";
 
 const HomeComponent: React.FC = () => {

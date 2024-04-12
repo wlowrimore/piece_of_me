@@ -1,9 +1,3 @@
-import Link from "next/link";
-import Image from "next/image";
-import EmailIcon from "/public/images/contact/email.webp";
-import LinkedInIcon from "/public/images/contact/linkedin.webp";
-import GitHubIcon from "/public/images/contact/github.webp";
-
 const Title: React.FC = () => {
   return (
     <div className="py-4 md:pb-20">

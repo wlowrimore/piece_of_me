@@ -1,5 +1,3 @@
-import React from "react";
-
 const Snippet1A: React.FC = () => {
   return (
     <article className="flex flex-col w-4/5 bg-gradient-to-r from-gray-700 to-transparent px-3 ml-2 border-b border-l border-zinc-500 rounded-l-xl py-1">

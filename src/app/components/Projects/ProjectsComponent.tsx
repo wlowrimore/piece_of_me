@@ -17,7 +17,6 @@ interface ProjectComponentProps {
 }
 
 const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
-  const [projectSample, setProjectSample] = useState<Project[]>([]);
   const [visibleOverlayId, setVisibleOverlayId] = useState<number | null>(null);
 
   const handleMouseEnter = (projectId: number): void => {
