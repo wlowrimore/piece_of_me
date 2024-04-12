@@ -38,7 +38,7 @@ const Testimonies: React.FC = () => {
     return () => {
       timeouts.forEach(clearTimeout);
     };
-  }, []);
+  }, [showSnippet]);
 
   return (
     <div className="relative h-full lg:w-full lg:ml-6 flex flex-col pt-[25%] lg:mt-[-4%] xl:pt-[14%] 2xl:pt-[24%] 2xl:ml-[18%] gap-8 lg:gap-3 overflow-hidden">

@@ -48,16 +48,17 @@ const About: React.FC = () => {
             Hey there!
           </h1>
           <p className="text-white md:text-zinc-200 text-lg md:text-2xl mb-[0.88rem]">
-            I'm William Lowrimore, a Frontend Developer from Nashville, TN. I
-            have been studying and building web applications since graduating
+            I&apos;m William Lowrimore, a Frontend Developer from Nashville, TN.
+            I have been studying and building web applications since graduating
             Vanderbilt University Code Bootcamp in the Spring of 2022.
           </p>
           <p className="text-white text-lg md:text-2xl mb-[0.88rem]">
             While working as a Junior Software Engineer, I became very
             passionate about Frontend Development and all of its moving parts
-            and neccessities. I develop mobile first, always keeping the users'
-            experience at the forefront of each design, and I'm always excited
-            to learn new things as I grow along with technological advancements.
+            and neccessities. I develop mobile first, always keeping the
+            users&apos; experience at the forefront of each design, and I&apos;m
+            always excited to learn new things as I grow along with
+            technological advancements.
           </p>
           <p className="text-white text-lg md:text-2xl">
             As a life-long student, teacher, and performer of music, I have

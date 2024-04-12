@@ -34,14 +34,14 @@ const Experience: React.FC<ExperienceProps> = ({ handleOpenExperience }) => {
         <div className="text-black text-sm md:text-lg w-full pl-8 pr-4 pt-3">
           <ul className="list-disc space-y-2">
             <li>
-              Restructured a client's website to be mobile responsive and
+              Restructured a client&apos;s website to be mobile responsive and
               implemented <strong>SEO</strong> best practices using{" "}
               <strong>HTML, CSS, JavaScript and jQuery</strong>. This resulting
               in a <strong>32% increase</strong> of web search visibility.
             </li>
             <li>
               Designed and developed mobile responsive Frontend for a start-up
-              company's website using{" "}
+              company&apos;s website using{" "}
               <strong>React, Next.JS and Tailwind</strong>. The result was a{" "}
               <strong>100% increase in brand awareness</strong>.
             </li>
