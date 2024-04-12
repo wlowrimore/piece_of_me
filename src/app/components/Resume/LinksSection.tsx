@@ -39,11 +39,11 @@ const LinksSection: React.FC = () => {
   };
 
   return (
-    <div className="w-full pt-10 text-white">
+    <div className="w-full pt-10 text-white 2xl:pt-0">
       <ul className="space-y-8 md:space-y-12 md:px-20 lg:px-44 xl:px-64 2xl:px-[44rem]  flex flex-col">
         <li
           onClick={handleOpenTechSkills}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
         >
           <span>
             <FaRegEye />
@@ -52,7 +52,7 @@ const LinksSection: React.FC = () => {
         </li>
         <li
           onClick={handleOpenExperience}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
         >
           <span>
             <FaRegEye />
@@ -61,7 +61,7 @@ const LinksSection: React.FC = () => {
         </li>
         <li
           onClick={handleOpenEducation}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
         >
           <span>
             <FaRegEye />
@@ -70,7 +70,7 @@ const LinksSection: React.FC = () => {
         </li>
         <li
           onClick={handleOpenCertifications}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
         >
           <span>
             <FaRegEye />
@@ -79,7 +79,7 @@ const LinksSection: React.FC = () => {
         </li>
         <li
           onClick={handleOpenTestimonials}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between"
+          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
         >
           <span>
             <FaRegEye />

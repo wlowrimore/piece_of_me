@@ -27,7 +27,7 @@ const ProjectComponent: React.FC<ProjectComponentProps> = ({ project }) => {
 
   return (
     <>
-      <div className="fixed top-0 right-2 p-1">
+      <div className="md:hidden fixed top-0 right-2 p-1">
         <NavMobile />
       </div>
       <main className="flex flex-col items-center">

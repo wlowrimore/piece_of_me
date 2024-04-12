@@ -12,7 +12,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
   return (
     <main className="w-screen min-h-screen bg-gradient-to-t from-[#304454]/80 to-[#B89F88] flex flex-col items-center p-4 md:p-16 mx-auto mb-6">
       <div className="fixed z-10 left-3 top-2 text-zinc-800/90 rounded-full">
-        <p className="text-2xl">
+        <p className="md:hidden text-2xl">
           <Link href="/">
             <TiHome />
           </Link>
@@ -31,7 +31,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
               href="https://github.com/wlowrimore"
               target="_blank"
               rel="noreferrer"
-              className="text-red-900/80 font-semibold underline"
+              className="text-red-700/80 font-semibold underline hover:text-indigo-600/70 transition duration-300"
             >
               Github&nbsp;page.
             </Link>
@@ -44,7 +44,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
             <ProjectComponent key={project.id} project={project} />
           ))}
       </div>
-      <div className="w-screen fixed bottom-0 flex items-center justify-center mt-auto h-[3rem]">
+      <div className="w-screen fixed bottom-0 flex items-center justify-center mt-auto h-[3rem] hover:h-[4rem] transition-all duration-300">
         <Link
           href="/contact"
           className="w-full h-full flex items-center justify-between px-20 bg-[#304454] text-white text-lg font-semibold rounded-t-3xl"

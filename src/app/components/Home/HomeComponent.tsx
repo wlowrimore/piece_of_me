@@ -14,7 +14,7 @@ import Testimonies from "./TestimonySnippets/Testimonies";
 const HomeComponent: React.FC = () => {
   return (
     <div className="relative h-screen flex flex-col items-center justify-center gap-2 overflow-hidden">
-      <div className="fixed top-0 right-0 p-1">
+      <div className="md:hidden fixed top-0 right-0 p-1">
         <NavMobile />
       </div>
       <HomeHeaderComponent />
@@ -30,7 +30,7 @@ const HomeComponent: React.FC = () => {
           className="opacity-90 w-[90%] md:w-[30rem]"
         />
       </div>
-      <div className="z-20 w-screen flex items-center justify-center mt-auto h-[3rem]">
+      <div className="z-20 w-screen flex items-center justify-center mt-auto h-[3rem] hover:h-[4rem] transition-all duration-300">
         <Link
           href="/about"
           className="w-full h-full flex items-center justify-between px-12 bg-[#304454] text-[#B89F88] text-xl font-semibold rounded-t-3xl"

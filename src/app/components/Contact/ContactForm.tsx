@@ -64,7 +64,7 @@ const ContactForm: React.FC = () => {
 
   return (
     <>
-      <div className="fixed top-0 right-0 p-1">
+      <div className="md:hidden fixed top-0 right-0 p-1">
         <NavMobile />
       </div>
       <ContactFormUISection

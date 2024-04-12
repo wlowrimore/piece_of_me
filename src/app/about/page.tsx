@@ -18,7 +18,7 @@ const About: React.FC = () => {
             </Link>
           </p>
         </div>
-        <div className="flex flex-col w-full px-6 pt-16 md:pt-32 md:px-20 pb-20 lg:pb-10 2xl:container 2xl:mx-auto 2xl:py-44 justify-center">
+        <div className="flex flex-col w-full px-6 pt-16 md:pt-32 md:px-20 pb-10 lg:pb-10 2xl:container 2xl:mx-auto 2xl:py-44 justify-center">
           <h1 className="py-3 text-2xl md:text-3xl text-zinc-100 md:text-zinc-200 uppercase">
             Hey there!
           </h1>
@@ -41,7 +41,7 @@ const About: React.FC = () => {
           </p>
         </div>
         <AboutLinks />
-        <div className="fixed bottom-0 w-screen flex items-center justify-center h-[3rem] mb-[-0.2rem]">
+        <div className="fixed bottom-0 w-screen flex items-center justify-center h-[3rem] hover:h-[4rem] transition-all duration-300 mb-[-0.2rem]">
           <Link
             href="/projects"
             className="w-full h-full flex items-center justify-between px-12 bg-red-950 text-zinc-300 text-lg font-semibold rounded-t-3xl border-t border-zinc-500"
