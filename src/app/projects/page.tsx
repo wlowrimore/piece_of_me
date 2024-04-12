@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { HiChevronRight } from "react-icons/hi";
 import { TiHome } from "react-icons/ti";
-import ProjectComponent from "../components/ProjectsComponent";
+import ProjectComponent from "../components/Projects/ProjectsComponent";
 import { Project } from "../../../types";
 import projectsData from "../../../public/projects.json";
 interface ProjectPageProps {
@@ -38,7 +38,7 @@ const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
           </p>
         </div>
       </div>
-      <div className="mt-12 md:grid grid-cols-2 md:w-[40rem] lg:w-full 2xl:w-[70rem] md:gap-10 gap-4 2xl:container 2xl:gap-10">
+      <div className="mt-12 md:grid grid-cols-2 md:w-[40rem] lg:w-full 2xl:w-[70rem] md:gap-10 gap-4 2xl:container 2xl:mt-20 2xl:gap-14">
         {projectsData &&
           projectsData.map((project: Project) => (
             <ProjectComponent key={project.id} project={project} />

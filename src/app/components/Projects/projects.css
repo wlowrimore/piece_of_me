@@ -1,0 +1,8 @@
+.glow-on-hover {
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.glow-on-hover:hover {
+  box-shadow: 0 0 2rem #b9dffb;
+  background-color: #03393f;
+}

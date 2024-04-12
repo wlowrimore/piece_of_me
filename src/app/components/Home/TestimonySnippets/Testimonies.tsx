@@ -82,7 +82,7 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div
-        className={`transition-opacity delay-0 duration-1000 ${
+        className={`transition-opacity delay-0 duration-2000 ${
           showSnippet.snippet1C ? "opacity-100" : "opacity-0"
         }`}
       >

@@ -15,7 +15,7 @@ const Contact: React.FC = () => {
           <Link href="/">
             <TiHome />
           </Link>
-          <div className="fixed left-[32%] top-2 opacity-70 flex gap-4">
+          {/* <div className="fixed left-[32%] top-2 opacity-70 flex gap-4">
             <Link
               href="mailto://wlowrimore@gmail.com"
               target="_blank"
@@ -58,7 +58,7 @@ const Contact: React.FC = () => {
                 className="rounded-full border-2 border-[#35AACE] bg-[#35AACE]"
               />
             </Link>
-          </div>
+          </div> */}
         </p>
       </div>
       <section className="w-full">

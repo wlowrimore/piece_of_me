@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { FaRegEye } from "react-icons/fa";
-import Link from "next/link";
+import { Fade } from "react-awesome-reveal";
 // Modal Imports
 import TechSkills from "../Modals/TechSkills";
 import Experience from "../Modals/Experience";
@@ -41,51 +41,76 @@ const LinksSection: React.FC = () => {
   return (
     <div className="w-full pt-10 text-white 2xl:pt-0">
       <ul className="space-y-8 md:space-y-12 md:px-20 lg:px-44 xl:px-64 2xl:px-[44rem]  flex flex-col">
-        <li
-          onClick={handleOpenTechSkills}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+        <Fade direction={"left"} duration={1000} triggerOnce={true}>
+          <li
+            onClick={handleOpenTechSkills}
+            className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          >
+            <span>
+              <FaRegEye />
+            </span>
+            Technical Skills
+          </li>
+        </Fade>
+        <Fade
+          direction={"right"}
+          delay={300}
+          duration={1000}
+          triggerOnce={true}
         >
-          <span>
-            <FaRegEye />
-          </span>
-          Technical Skills
-        </li>
-        <li
-          onClick={handleOpenExperience}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          <li
+            onClick={handleOpenExperience}
+            className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          >
+            <span>
+              <FaRegEye />
+            </span>
+            Experience
+          </li>
+        </Fade>
+        <Fade direction={"left"} delay={600} duration={1000} triggerOnce={true}>
+          <li
+            onClick={handleOpenEducation}
+            className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          >
+            <span>
+              <FaRegEye />
+            </span>
+            Education
+          </li>
+        </Fade>
+        <Fade
+          direction={"right"}
+          delay={800}
+          duration={1000}
+          triggerOnce={true}
         >
-          <span>
-            <FaRegEye />
-          </span>
-          Experience
-        </li>
-        <li
-          onClick={handleOpenEducation}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          <li
+            onClick={handleOpenCertifications}
+            className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          >
+            <span>
+              <FaRegEye />
+            </span>
+            Certifications
+          </li>
+        </Fade>
+        <Fade
+          direction={"left"}
+          delay={1000}
+          duration={1000}
+          triggerOnce={true}
         >
-          <span>
-            <FaRegEye />
-          </span>
-          Education
-        </li>
-        <li
-          onClick={handleOpenCertifications}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
-        >
-          <span>
-            <FaRegEye />
-          </span>
-          Certifications
-        </li>
-        <li
-          onClick={handleOpenTestimonials}
-          className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
-        >
-          <span>
-            <FaRegEye />
-          </span>
-          Testimonials
-        </li>
+          <li
+            onClick={handleOpenTestimonials}
+            className="px-4 py-1 border-b border-zinc-400 flex items-center justify-between cursor-pointer hover:bg-zinc-200/10 rounded-t-xl transition duration-300"
+          >
+            <span>
+              <FaRegEye />
+            </span>
+            Testimonials
+          </li>
+        </Fade>
       </ul>
       <ResumeDownload
         downloadSuccess={false}
