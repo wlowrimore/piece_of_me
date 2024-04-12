@@ -6,9 +6,6 @@ import { TiHome } from "react-icons/ti";
 import ProjectComponent from "../components/Projects/ProjectsComponent";
 import { Project } from "../../../types";
 import projectsData from "../../../public/projects.json";
-interface ProjectPageProps {
-  projects: Project[];
-}
 
 export const metadata: Metadata = {
   title: "Projects | William Lowrimore | Frontend Developer",
@@ -33,7 +30,7 @@ export const metadata: Metadata = {
   },
 };
 
-const Projects: React.FC<ProjectPageProps> = ({ projects }) => {
+const Projects: React.FC = () => {
   return (
     <main className="w-screen min-h-screen bg-gradient-to-t from-[#304454]/80 to-[#B89F88] flex flex-col items-center p-4 md:p-16 mx-auto mb-6">
       <div className="fixed z-10 left-3 top-2 text-zinc-800/90 rounded-full">
