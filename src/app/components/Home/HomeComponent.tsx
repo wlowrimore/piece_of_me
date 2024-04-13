@@ -28,7 +28,7 @@ const HomeComponent: React.FC = () => {
             alt="William Lowrimore"
             width={1000}
             height={1000}
-            className="opacity-90 w-[90%] md:w-[30rem]"
+            className="opacity-90 w-[20rem] md:w-[30rem]"
           />
         </div>
       </Fade>
