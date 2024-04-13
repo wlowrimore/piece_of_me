@@ -19,7 +19,7 @@ const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
         >
           X
         </p>
-        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-12 2xl:pl-[30%] 2xl:pt-20">
+        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-12 2xl:px-[40%] 2xl:ml-[7%] 2xl:pt-20">
           <p className="text-start md:text-xl font-semibold">Languages:</p>
           <div className="w-full grid grid-cols-2 md:gap-x-12 text-sm md:text-lg">
             <p>HTML</p>
@@ -27,7 +27,7 @@ const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
             <p>TypeScript</p>
           </div>
         </div>
-        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:pl-[30%]">
+        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:px-[40%] 2xl:ml-[7%]">
           <p className="text-start md:text-xl font-semibold">
             Frameworks | Libraries:{" "}
           </p>
@@ -42,7 +42,7 @@ const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
           </div>
         </div>
 
-        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:pl-[30%]">
+        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:px-[40%] 2xl:ml-[7%] ">
           <p className="text-start md:text-xl font-semibold">
             Tools | Applications:{" "}
           </p>
@@ -54,7 +54,7 @@ const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
           </div>
         </div>
 
-        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:pl-[30%]">
+        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:px-[40%] 2xl:ml-[7%] ">
           <p className="text-start md:text-xl font-semibold">Functional: </p>
           <div className="w-full grid grid-cols-2 md:gap-x-12 text-sm md:text-lg">
             <p>SDLC</p>
@@ -64,7 +64,7 @@ const TechSkills: React.FC<TechSkillsProps> = ({ handleOpenTechSkills }) => {
           </div>
         </div>
 
-        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:pl-[30%]">
+        <div className="text-black w-full px-4 md:w-screen md:pl-52 lg:pl-[21rem] pt-5 md:pt-10 2xl:px-[40%] 2xl:ml-[7%] ">
           <p className="text-start md:text-xl font-semibold">Professional: </p>
           <div className="w-full grid grid-cols-1 text-sm md:text-lg">
             <p>Time Management</p>

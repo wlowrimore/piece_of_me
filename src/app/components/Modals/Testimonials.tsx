@@ -12,7 +12,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
   return (
     <div className="fixed inset-0 backdrop-blur-sm">
       <div className="relative flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 mx-4 px-4 pt-64 pb-16 border-2 border-zinc-800 rounded-lg overflow-scroll h-screen">
-        <h1 className="text-3xl md:text-4xl md:mt-[-27rem] md:pb-12 lg:pt-56 2xl:pt-72 text-indigo-800 font-semibold">
+        <h1 className="text-3xl md:text-4xl md:mt-[-27rem] md:pb-12 lg:pt-56 2xl:pt-12 text-indigo-800 font-semibold">
           Testimonials
         </h1>
         <p
@@ -21,7 +21,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
         >
           X
         </p>
-        <div className="2xl:w-full 2xl:flex">
+        <div className="2xl:w-full 2xl:flex 2xl:mt-12 2xl:px-[25%]">
           <div className="text-black w-full px-4 pt-5 2xl:pt-5">
             <h2 className="font-semibold md:text-xl">Tim Lowrimore</h2>
             <p className="text-red-700 md:text-lg">
@@ -29,7 +29,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
             </p>
             <p className="md:text-lg">November 5, 2023</p>
             <p className="italic md:text-lg">Tim managed William directly</p>
-            <article className="mt-3 md:text-lg 2xl:w-[50%]">
+            <article className="mt-3 md:text-lg 2xl:w-full">
               Will is a thoughtful and passionate developer. I&apos;ve known
               Will to work tirelessly to first grasp challenging concepts, and
               then go on to master them. His dedication to excellence has been a
@@ -47,7 +47,7 @@ const Testimonials: React.FC<TestimonialsProps> = ({
             <p className="md:text-lg italic">
               Courtez and William studied together at Vanderbilt
             </p>
-            <article className="mt-2 md:text-lg 2xl:w-[50%]">
+            <article className="mt-2 md:text-lg 2xl:w-full">
               I worked with Will previosly on a project. Will showed great
               attention to detail and was constantly on top of the project and
               schedule. During the project, Will was not only ready but eager to

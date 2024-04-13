@@ -53,7 +53,7 @@ const ResumeDownload: React.FC<ResumeDownloadProps> = () => {
         </button>
       </div>
       {downloadSuccess && (
-        <p className="absolute bottom-[17%] left-[24%] md:bottom-[24%] md:left-[36%] lg:bottom-[-4.5%] lg:left-[40%] 2xl:bottom-[8.3%] 2xl:left-[45.5%] text-green-500 md:text-xl tracking-wider">
+        <p className="absolute bottom-[17%] left-[24%] md:bottom-[24%] md:left-[36%] lg:bottom-[-4.5%] lg:left-[40%] 2xl:bottom-[10.3%] 2xl:left-[45.5%] text-green-500 md:text-xl tracking-wider">
           Download Successful!
           <span
             onClick={(e) => setDownloadSuccess(false)}
