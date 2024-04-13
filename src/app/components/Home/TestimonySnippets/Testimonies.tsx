@@ -19,8 +19,6 @@ const Testimonies: React.FC = () => {
     snippet2B: false,
   });
 
-  // const randomInterval = () => Math.random() * 5000;
-
   useEffect(() => {
     const toggleSnippetVisibility = (snippetName: string) => {
       setShowSnippet((prev) => ({
@@ -44,14 +42,6 @@ const Testimonies: React.FC = () => {
     <div className="relative h-full lg:w-full lg:ml-6 flex flex-col pt-[25%] lg:mt-[-4%] xl:pt-[14%] 2xl:pt-[24%] 2xl:ml-[18%] gap-8 lg:gap-3 overflow-hidden">
       <div
         className={`transition-opacity duration-1000 ${
-          showSnippet.snippet1B ? "opacity-100" : "opacity-0"
-        }`}
-      >
-        <Snippet1B />
-      </div>
-
-      <div
-        className={`transition-opacity duration-1000 ${
           showSnippet.snippet1A ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -60,10 +50,18 @@ const Testimonies: React.FC = () => {
 
       <div
         className={`transition-opacity duration-1000 ${
-          showSnippet.snippet2B ? "opacity-100" : "opacity-0"
+          showSnippet.snippet1B ? "opacity-100" : "opacity-0"
         }`}
       >
-        <Snippet2B />
+        <Snippet1B />
+      </div>
+
+      <div
+        className={`transition-opacity duration-1000 ${
+          showSnippet.snippet1C ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <Snippet1C />
       </div>
 
       <div
@@ -73,6 +71,7 @@ const Testimonies: React.FC = () => {
       >
         <Snippet1D />
       </div>
+
       <div
         className={`transition-opacity duration-1000 ${
           showSnippet.snippet2A ? "opacity-100" : "opacity-0"
@@ -83,10 +82,10 @@ const Testimonies: React.FC = () => {
 
       <div
         className={`transition-opacity duration-1000 ${
-          showSnippet.snippet1C ? "opacity-100" : "opacity-0"
+          showSnippet.snippet2B ? "opacity-100" : "opacity-0"
         }`}
       >
-        <Snippet1C />
+        <Snippet2B />
       </div>
     </div>
   );
