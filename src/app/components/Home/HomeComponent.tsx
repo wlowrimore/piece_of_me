@@ -22,13 +22,13 @@ const HomeComponent: React.FC = () => {
         <Testimonies />
       </div>
       <Fade duration={6000} delay={2000} triggerOnce={true}>
-        <div className="absolute bottom-[-1.5rem] right-[-2.5rem] md:bottom-[-2.8rem] md:right-[-6rem] lg:bottom-[-3.5rem] 2xl:bottom-[-4.5rem]">
+        <div className="absolute bottom-[-1.5rem] right-[-2.5rem] md:bottom-[-2.8rem] md:right-[-2rem] lg:bottom-[-3.5rem] 2xl:bottom-[-4.5rem]">
           <Image
             src={Avatar}
             alt="William Lowrimore"
             width={1000}
             height={1000}
-            className="opacity-90 w-[40rem] md:w-[30rem]"
+            className="opacity-90 w-[40rem] md:w-[20rem]"
           />
         </div>
       </Fade>
