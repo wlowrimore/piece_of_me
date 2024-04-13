@@ -9,6 +9,7 @@ const ContactForm: React.FC = () => {
   const form = useRef<HTMLFormElement>(null);
   const [successMsg, setSuccessMsg] = useState<string>("");
   const [errMsg, setErrMsg] = useState<string>("");
+  const [isLoading, setIsLoading] = useState<boolean>(false);
   const [formValues, setFormValues] = useState({
     firstName: "",
     lastName: "",
@@ -28,6 +29,9 @@ const ContactForm: React.FC = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    setSuccessMsg("");
+    setErrMsg("");
+    setIsLoading(true);
     const formData = new FormData();
 
     Object.entries(formValues).forEach(([key, value]) => {
@@ -47,19 +51,21 @@ const ContactForm: React.FC = () => {
           setSuccessMsg(
             `Thank you for your message, ${formValues.firstName}. I will get back to you shortly.`
           );
+          setIsLoading(false);
+          setFormValues({
+            firstName: "",
+            lastName: "",
+            email: "",
+            subject: "",
+            message: "",
+          });
         },
         (error) => {
           console.log("Failed...", error.text);
           setErrMsg("Something went wrong...please try again.");
+          setIsLoading(false);
         }
       );
-    setFormValues({
-      firstName: "",
-      lastName: "",
-      email: "",
-      subject: "",
-      message: "",
-    });
   };
 
   return (
@@ -73,6 +79,7 @@ const ContactForm: React.FC = () => {
         handleSubmit={handleSubmit}
         successMsg={successMsg}
         errMsg={errMsg}
+        isLoading={isLoading}
         form={form}
       />
     </>

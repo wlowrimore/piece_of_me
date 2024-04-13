@@ -29,21 +29,21 @@ const Testimonies: React.FC = () => {
       }));
     };
 
-    const timeouts = Object.keys(showSnippet).map((snippetName) => {
+    const timeouts = Object.keys(showSnippet).map((snippetName, index) => {
       return setTimeout(() => {
         toggleSnippetVisibility(snippetName);
-      }, 2000);
+      }, index * 2000);
     });
 
     return () => {
       timeouts.forEach(clearTimeout);
     };
-  }, [showSnippet]);
+  }, []);
 
   return (
     <div className="relative h-full lg:w-full lg:ml-6 flex flex-col pt-[25%] lg:mt-[-4%] xl:pt-[14%] 2xl:pt-[24%] 2xl:ml-[18%] gap-8 lg:gap-3 overflow-hidden">
       <div
-        className={`transition-opacity delay-[5000ms] duration-1000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet1B ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -51,7 +51,7 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div
-        className={`transition-opacity delay-[4000ms] duration-1000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet1A ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -59,7 +59,7 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div
-        className={`transition-opacity delay-[3000ms] duration-1000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet2B ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -67,14 +67,14 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div
-        className={`transition-opacity delay-[2000ms] duration-1000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet1D ? "opacity-100" : "opacity-0"
         }`}
       >
         <Snippet1D />
       </div>
       <div
-        className={`transition-opacity delay-[1000ms] duration-1000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet2A ? "opacity-100" : "opacity-0"
         }`}
       >
@@ -82,7 +82,7 @@ const Testimonies: React.FC = () => {
       </div>
 
       <div
-        className={`transition-opacity delay-0 duration-2000 ${
+        className={`transition-opacity duration-1000 ${
           showSnippet.snippet1C ? "opacity-100" : "opacity-0"
         }`}
       >
