@@ -10,8 +10,8 @@ const Testimonials: React.FC<TestimonialsProps> = ({
   useBodyScrollLock();
 
   return (
-    <div className="fixed inset-0 backdrop-blur-sm">
-      <div className="relative flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 mx-4 px-4 py-16 border-2 border-zinc-800 rounded-lg overflow-scrll min-h-screen">
+    <div className="fixed inset-0 backdrop-blur-sm overflow-scroll">
+      <div className="relative flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 mx-4 px-4 py-16 border-2 border-zinc-800 rounded-lg min-h-screen">
         <h1 className="text-3xl md:text-4xl md:mt-[-27rem] md:pb-12 lg:pt-56 2xl:pt-12 text-indigo-800 font-semibold">
           Testimonials
         </h1>
