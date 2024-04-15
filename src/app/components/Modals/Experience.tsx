@@ -9,7 +9,7 @@ const Experience: React.FC<ExperienceProps> = ({ handleOpenExperience }) => {
 
   return (
     <div className="fixed inset-0 backdrop-blur-sm">
-      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 md:mt-12 mx-4 px-4 py-[45rem] md:py-96 pb-16 md:pb-0 border-2 border-zinc-800 rounded-lg overflow-scroll 2xl:px-96">
+      <div className="relative min-h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 md:mt-12 mx-4 px-4 py-16 md:py-96 pb-16 md:pb-0 border-2 border-zinc-800 rounded-lg overflow-scroll 2xl:px-96">
         <h1 className="text-3xl md:text-4xl md:mt-[-12rem] md:pb-12 text-indigo-800 font-semibold">
           Experience
         </h1>
