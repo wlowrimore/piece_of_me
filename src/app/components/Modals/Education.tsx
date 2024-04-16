@@ -8,9 +8,9 @@ const Education: React.FC<EducationProps> = ({ handleOpenEducation }) => {
   useBodyScrollLock();
 
   return (
-    <div className="fixed inset-0 backdrop-blur-sm">
-      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 mx-4 px-4 py-8 border-2 border-zinc-800 rounded-lg">
-        <h1 className="text-3xl md:text-4xl md:mt-[-38rem] md:pb-6 lg:pt-80 text-indigo-800 font-semibold">
+    <div className="fixed inset-0 backdrop-blur-sm overflow-scroll">
+      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 md:mt-16 2xl:mt-14 mx-4 2xl:px-[32%] px-4 xl:px-52 py-8 border-2 border-zinc-800 rounded-lg">
+        <h1 className="text-3xl md:text-4xl md:pb-6 2xl:pb-0 text-indigo-800 font-semibold">
           Education
         </h1>
         <p
@@ -19,7 +19,7 @@ const Education: React.FC<EducationProps> = ({ handleOpenEducation }) => {
         >
           X
         </p>
-        <div className="text-black w-full px-4 pt-5 2xl:mt-20 2xl:pl-[40%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[22%] 2xl:mt-10">
           <h2 className="font-semibold md:text-xl">
             React Advanced Concepts,{" "}
             <span className="text-sm md:text-lg font-normal">
@@ -30,7 +30,7 @@ const Education: React.FC<EducationProps> = ({ handleOpenEducation }) => {
             December 2022 - April 2023
           </p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[40%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[22%]">
           <h2 className="font-semibold md:text-xl">
             React Development,{" "}
             <span className="text-sm md:text-lg font-normal">Udemy</span>
@@ -39,7 +39,7 @@ const Education: React.FC<EducationProps> = ({ handleOpenEducation }) => {
             January 2022 - February 2022
           </p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[40%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[22%]">
           <h2 className="font-semibold md:text-xl">
             Web Development,{" "}
             <span className="text-sm md:text-lg font-normal">

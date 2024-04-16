@@ -60,19 +60,19 @@ const NavMobile: React.FC = () => {
         </div>
         <div className="py-8 z-50">
           <Link href="/">
-            <p className="py-1.5 pl-4">Home</p>
+            <p className="py-1.5 pl-4 hover:bg-zinc-500">Home</p>
           </Link>
           <Link href="/about">
-            <p className="py-1.5 pl-4">About</p>
+            <p className="py-1.5 pl-4 hover:bg-zinc-500">About</p>
           </Link>
           <Link href="/projects">
-            <p className="py-1.5 pl-4">Projects</p>
+            <p className="py-1.5 pl-4 hover:bg-zinc-500">Projects</p>
           </Link>
           <Link href="/contact">
-            <p className="py-1.5 pl-4">Contact</p>
+            <p className="py-1.5 pl-4 hover:bg-zinc-500">Contact</p>
           </Link>
           <Link href="/resume">
-            <p className="pt-[0.3rem] pb-2 pl-4">Resume</p>
+            <p className="pt-[0.3rem] pb-2 pl-4 hover:bg-zinc-500">Resume</p>
           </Link>
         </div>
       </nav>

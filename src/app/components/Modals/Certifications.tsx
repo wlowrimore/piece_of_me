@@ -10,9 +10,9 @@ const Certifications: React.FC<CertificationsProps> = ({
   useBodyScrollLock();
 
   return (
-    <div className="fixed inset-0 backdrop-blur-sm">
-      <div className="relative h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 2xl:mt-14 mx-4 px-4 py-8 border-2 border-zinc-800 rounded-lg">
-        <h1 className="text-3xl md:text-4xl md:mt-[-18rem] md:pb-12 lg:pt-80 2xl:pt-44 text-indigo-800 font-semibold">
+    <div className="fixed inset-0 backdrop-blur-sm overflow-scroll">
+      <div className="relative min-h-screen flex flex-col items-center justify-center bg-zinc-200 mt-8 md:mt-16 2xl:mt-16 mx-4 xl:px-52 2xl:px-[29%] px-4 py-8 border-2 border-zinc-800 rounded-lg">
+        <h1 className="text-3xl md:text-4xl md:pb-12 text-indigo-800 font-semibold">
           Certifications
         </h1>
         <p
@@ -21,31 +21,31 @@ const Certifications: React.FC<CertificationsProps> = ({
         >
           X
         </p>
-        <div className="text-black w-full px-4 pt-5 2xl:pt-10 2xl:pl-[43%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[32%] 2xl:pt-6">
           <h2 className="font-semibold md:text-xl">Certified Web Developer</h2>
           <p className="md:text-lg">Vanderbilt University Code Bootcamp</p>
           <p className="md:text-lg">May 2022</p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[43%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[32%]">
           <h2 className="font-semibold md:text-xl">
             Certified Agile Software Developer
           </h2>
           <p className="md:text-lg">LinkedIn</p>
           <p className="md:text-lg">June 2022</p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[43%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[32%]">
           <h2 className="font-semibold md:text-xl">
             Certified React Developer
           </h2>
           <p className="md:text-lg">Udemy</p>
           <p className="md:text-lg">July 2022</p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[43%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[32%]">
           <h2 className="font-semibold md:text-xl">SDLC Certified</h2>
           <p className="md:text-lg">LinkedIn</p>
           <p className="md:text-lg">July 2022</p>
         </div>
-        <div className="text-black w-full px-4 pt-5 2xl:pl-[43%]">
+        <div className="text-black w-full px-4 pt-5 lg:pl-[32%]">
           <h2 className="font-semibold md:text-xl">
             Certified Strategic SEO Developer
           </h2>
